@@ -1,1 +1,0 @@
-file temporaneo per caricare cartelle con struttura corretta per ros
