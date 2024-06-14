@@ -2,7 +2,7 @@
 
 ## Mapping
 Start the mapping task by executing the following command</br>
-`roslaunch first_project launch.launch`</br>
+`roslaunch second_project gmapping_launcher.launch`</br>
 and then start the bag provided by prof. Mentasti.</br>
 rviz should open up already configured to visualize everything.</br>
 You can view the map in the maps folder, and a png of it is in the slides folder.
