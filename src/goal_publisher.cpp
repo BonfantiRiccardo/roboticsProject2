@@ -69,12 +69,12 @@ int main(int argc, char *argv[]){
     ros::NodeHandle nh;  // Create a NodeHandle
 
     // Check if the path to the CSV file is provided
-    if (argc != 2) {
-        ROS_ERROR("Usage: goal_publisher <path_to_csv>");
+    std::string filename;
+    if (!nh.getParam("csv_file_path", filename)) {
+        ROS_ERROR("Failed to get param 'csv_file_path'");
         return 1;
     }
 
-    std::string filename = argv[1];  // Get the CSV file path from the command line argument
     std::vector<goal_t> goals = readCSV(filename);  // Read goals from the CSV file
 
 
