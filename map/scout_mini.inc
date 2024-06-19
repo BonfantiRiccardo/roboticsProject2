@@ -33,7 +33,7 @@ z [0 0.245]
 )
   origin [ 0.0 0.0 0.0 0.0 ]
   gui_nose 1
-  drive "omni"
+  drive "diff"
   color "red"
   
   kinect(pose [0.0 0.0 0.245 0.0])
