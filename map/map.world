@@ -31,14 +31,14 @@ floorplan
 (
   name "map"
   bitmap "map.pgm"
-  size [ 30.5 17.5 2.0 ]
+  size [ 31 16.8 1.0 ]
   pose [  0.0  0.0 0.0 0.0 ]
 )
 
 # throw in a robot
 scout_mini
 (
-  pose [ -11.24 4.16 0.0 0.0 ]
+  pose [ -11.4 4.0 0.0 0.0 ]
   name "scouter"
   color "red"
 )
