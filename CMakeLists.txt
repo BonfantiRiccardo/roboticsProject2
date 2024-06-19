@@ -76,6 +76,10 @@ add_executable(ugv_odom_to_tf src/ugv_odom_to_tf.cpp)
 add_dependencies(ugv_odom_to_tf ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(ugv_odom_to_tf ${catkin_LIBRARIES})
 
+add_executable(goal_reader src/goal_reader.cpp)
+add_dependencies(goal_reader ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(goal_reader ${catkin_LIBRARIES})
+
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
 ## target back to the shorter version for ease of user use
