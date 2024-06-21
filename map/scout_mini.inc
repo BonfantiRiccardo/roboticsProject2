@@ -20,17 +20,17 @@ define scout_mini position
 
   odom_error [0.2 0.2 0.0 0.3 ]
 
-size [ 0.612 0.58 0.245 ]
+  size [ 0.612 0.58 0.245 ]
 
-block 
-(
-points 4
-point[0] [0.612 0]
-point[1] [0.612 0.58]
-point[2] [0 0.58]
-point[3] [0 0]
-z [0 0.245]
-)
+  block 
+  (
+  points 4
+  point[0] [0.612 0]
+  point[1] [0.612 0.58]
+  point[2] [0 0.58]
+  point[3] [0 0]
+  z [0 0.245]
+  )
   origin [ 0.0 0.0 0.0 0.0 ]
   gui_nose 1
   drive "diff"
