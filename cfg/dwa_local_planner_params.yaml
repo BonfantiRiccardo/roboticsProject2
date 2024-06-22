@@ -3,7 +3,7 @@ DWAPlannerROS:
 
 # Robot Configuration Parameters - Kobuki
   max_vel_x: 3.0  # 0.55
-  min_vel_x: -1.0 
+  min_vel_x: -1.0
 
   max_vel_y: 0.0
   min_vel_y: 0.0
@@ -19,7 +19,8 @@ DWAPlannerROS:
   max_vel_theta: 3.0  # choose slightly less than the base's capability
   min_vel_theta: 0.4  # this is the min angular velocity when there is negligible translational velocity
   theta_stopped_vel: 0.4
-  
+
+
   acc_lim_x: 0.5 # maximum is theoretically 2.0, but we don't want to crash/do strange stuff/overshoot
   acc_lim_theta: 1.0 #rad
   acc_lim_y: 0.0     # diff drive robot
@@ -27,7 +28,7 @@ DWAPlannerROS:
 # Goal Tolerance Parameters
   yaw_goal_tolerance: 0.3  # 0.05
   xy_goal_tolerance: 0.5  # 0.10
-
+  latch_xy_goal_tolerance: true
 
 # Forward Simulation Parameters
   sim_time: 1.7      # 1.7 The amount of time to forward-simulate trajectories in seconds
@@ -44,7 +45,7 @@ DWAPlannerROS:
   stop_time_buffer: 0.2         # 0.2    - amount of time a robot must stop in before colliding for a valid traj.
   scaling_speed: 0.25           # 0.25   - absolute velocity at which to start scaling the robot's footprint
   max_scaling_factor: 0.2       # 0.2    - how much to scale the robot's footprint when at speed.
-  
+
 # Oscillation Prevention Parameters
   oscillation_reset_dist: 0.15  # 0.05   - how far to travel before resetting oscillation flags
 
