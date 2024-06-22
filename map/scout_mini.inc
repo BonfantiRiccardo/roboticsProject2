@@ -17,8 +17,7 @@ define scout_mini position
   
   localization "odom"
 
-
-  odom_error [0.2 0.2 0.0 0.3 ]
+  odom_error [0.02 0.02 0.0 0.02 ]
 
   size [ 0.612 0.58 0.245 ]
 
@@ -33,8 +32,11 @@ define scout_mini position
   )
   origin [ 0.0 0.0 0.0 0.0 ]
   gui_nose 1
-  drive "diff"
+  drive "omni"
   color "red"
+  
+  velocity_bounds [-3 3 -3 3 -1 1 -90 90 ]					
+  acceleration_bounds [-1 1 -1 1 -1 1 -90 90]
   
   kinect(pose [0.0 0.0 0.245 0.0])
 )

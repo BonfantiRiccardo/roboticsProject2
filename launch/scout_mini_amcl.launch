@@ -1,7 +1,5 @@
 
 <launch>
-  <arg name="base"       default="burger"/>  <!-- create_circles_asus_xtion_pro create_circles_kinect kobuki_hexagons_astra kobuki_hexagons_asus_xtion_pro kobuki_hexagons_asus_xtion_pro 
-kobuki_hexagons_kinect kobuki_hexagons_r200 roomba_circles_asus_xtion_pro roomba_circles_kinect -->
 
   <!-- Name of the map to use and initial position -->
   <arg name="map_file"       default="$(find second_project)/map/map.yaml"/> 
@@ -20,15 +18,6 @@ kobuki_hexagons_kinect kobuki_hexagons_r200 roomba_circles_asus_xtion_pro roomba
   <node pkg="stage_ros" type="stageros" name="stageros" args="$(arg world_file)">
     <param name="base_watchdog_timeout" value="0.5"/>
     <remap from="base_scan" to="scan"/>
-  </node>
-
-
-  <!--  ***************** Robot Model *****************  -->
-  <include file="$(find turtlebot3_bringup)/launch/includes/description.launch.xml">
-    <arg name="model" value="$(arg base)" />
-  </include>
-  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
-    <param name="use_gui" value="false"/>
   </node>
 
 
