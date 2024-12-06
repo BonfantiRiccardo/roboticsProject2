@@ -16,6 +16,6 @@ In case you want to manually set the goals for the robot execute the following c
 
 ## Team
 
-- [Edoardo](https://github.com/Janoww)
-- [Riccardo](https://github.com/BonfantiRiccardo)
-- [Alessio](https://github.com/BiscottiBiscottati)
+- [Edoardo Bergamo](https://github.com/Janoww)
+- [Riccardo Bonfanti](https://github.com/BonfantiRiccardo)
+- [Zining Chen](https://github.com/BiscottiBiscottati)
