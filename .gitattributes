@@ -1,0 +1,3 @@
+# Ignore CMake files for language stats
+CMakeLists.txt linguist-vendored=true
+*.cmake linguist-vendored=true
